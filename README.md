@@ -35,7 +35,9 @@ Time spent: **X** hours spent in total
 ## Assets
 
 List any additional assets, such as scripts or files
-
+admin.git
+cookie.gif
+vulnerability.gif
 ## Resources
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
