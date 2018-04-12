@@ -6,33 +6,31 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+1. Testing for User Enumeration and Guessable User Account
+  - [ ] Summary: try random us
+    - Vulnerability types: wrong password for a specific username can lead to bruteforcing password.
+    - Tested in version: 4.2
+    - Fixed in version: 4.7.5
   - [ ] GIF Walkthrough: ![Alt Text](admin.gif)
-  - [ ] Steps to recreate: 
+  - [ ] Steps to recreate: Go through random User and depending on the Error message bruteforce to find the password
+
+1. XSS 1 (Display Cookie)
+    - Tested in version: 4.2.0
+    - Fixed in version: 4.2.1
+  - [ ] GIF Walkthrough:  ![Alt Text](cookie.gif)
+  - [ ] Steps to recreate: The Admin will add a comment using onmouseover and display the cookies
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+    - [source](https://wpvulndb.com/vulnerabilities/8186)
+1. XSS 2 
+    - Tested in version: 4.2.0
+    - Fixed in version: 4.7.0
+  - [ ] GIF Walkthrough: ![Alt Text](vulnerability.gif)
+  - [ ] Steps to recreate:
+            1) User will add a comment
+            2) admin will approve comment
+            3) when admin views comment on page then alert pops up.
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://wpvulndb.com/vulnerabilities/7945)
 
 ## Assets
 
@@ -43,7 +41,7 @@ List any additional assets, such as scripts or files
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 
-GIFs created with [LiceCap](http://www.cockos.com/licecap/).
+GIFs created with [LiceCap](https://github.com/phw/peek).
 
 ## Notes
 
